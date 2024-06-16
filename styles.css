@@ -85,24 +85,6 @@ main p {
     transition: color 0.5s ease;
 }
 
-main .section-title {
-    font-size: 2em;
-    color: #ffaa00;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.main-content {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.main-content.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 /* Footer Styles */
 footer {
     text-align: center;
@@ -177,43 +159,4 @@ h3 {
 p {
     font-size: 1.1em;
     margin-bottom: 20px;
-}
-
-/* Project Section Styles */
-.projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.project {
-    background: #333;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: calc(50% - 10px);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.project h3 {
-    margin-top: 0;
-}
-
-.project p {
-    margin-bottom: 0;
-}
-
-.hidden {
-    display: none;
-}
-
-/* Smooth Scroll */
-html {
-    scroll-behavior: smooth;
 }
