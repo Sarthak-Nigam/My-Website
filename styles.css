@@ -1,17 +1,26 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* Header Styles */
 header {
-    background: linear-gradient(135deg, #ff6b6b, #f06595);
+    background: #1e1e1e;
     color: #fff;
-    padding: 10px 0;
+    padding: 15px 0;
     text-align: center;
     position: sticky;
     top: 0;
@@ -35,40 +44,48 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
+    color: #00aaff;
     font-weight: bold;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #ffaa00;
 }
 
 /* Main Content Styles */
 main {
-    padding: 20px;
-    background: #fff;
+    padding: 40px 20px;
+    background: #1e1e1e;
     margin: 20px auto;
     max-width: 800px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+main h1, main h2, main h3 {
+    color: #00aaff;
+}
+
+main p {
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
 /* Footer Styles */
 footer {
     text-align: center;
-    padding: 10px 0;
-    background: #333;
-    color: #fff;
-    position: fixed;
-    width: 100%;
+    padding: 15px 0;
+    background: #1e1e1e;
+    color: #777;
+    position: relative;
     bottom: 0;
+    width: 100%;
 }
 
 /* Form Styles */
 form label {
     display: block;
-    margin: 10px 0 5px;
+    margin: 15px 0 5px;
     font-weight: bold;
 }
 
@@ -76,14 +93,16 @@ form input, form textarea {
     width: 100%;
     padding: 10px;
     margin: 5px 0;
-    border: 1px solid #ccc;
+    border: 1px solid #333;
     border-radius: 5px;
+    background: #333;
+    color: #f0f0f0;
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 form button {
     padding: 10px 20px;
-    background: linear-gradient(135deg, #ff6b6b, #f06595);
+    background: #00aaff;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -92,14 +111,29 @@ form button {
 }
 
 form button:hover {
-    background: linear-gradient(135deg, #f06595, #ff6b6b);
+    background: #ffaa00;
 }
 
 /* Additional Styles */
 h1 {
-    color: #f06595;
+    color: #00aaff;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #ffaa00;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #00aaff;
+    font-size: 1.5em;
+    margin-bottom: 20px;
 }
 
 p {
-    line-height: 1.6;
+    font-size: 1.1em;
+    margin-bottom: 20px;
 }
